@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.SAcontainer {
+  background-color: #5cb2a8;
+  box-shadow: 1px 1px 3px #353a3b;
+  height: 90vh;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+p {
+  font-size: 1em;
+}
+
+#SAclose {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #2f6a63;
+  color: black;
+  user-select: none;
+}
+
+#SAclose:hover {
+  background-color: #2f6a63;
+  box-shadow: 1px 1px #25413e;
+}
+
+#runForm {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #68bbb1;
+  color: black;
+  user-select: none;
+  margin-right: 4%;
+}
+
+#runForm:hover {
+  background-color: #4d8982;
+  box-shadow: 1px 1px #25413e;
+}
+
+#IFAtitle {
+  text-align: center;
+}
+
+#songName {
+  border: none;
+  border-radius: 20px;
+  padding: 12px 20px;
+  padding-right: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  height: 17px;
+  font-size: 15px;
+}
+
+.imgShow {
+  width: 50%;
+  margin-top: 7%;
+  margin-right: 25%;
+  margin-left: 25%;
+  cursor: pointer;
+}
+
+#input {
+  float: left;
+  width: 48%;
+  height: 77vh;
+  border-radius: 15px;
+  background: #bbece7;
+  padding-top: 0px;
+}
+
+#output {
+  float: right;
+  width: 48%;
+  height: 77vh;
+  border-radius: 15px;
+  background: #bbece7;
+  padding-top: 0px;
+}
+
+.Artist {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.Title {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.play {
+  width: 100%;
+  margin-top: 1%;
+}
+
+@media screen and (max-width: 600px) {
+
+  #input,
+  #output {
+    float: none;
+    /* remove the float property */
+    width: 100%;
+    /* make the width 100% of the container */
+    margin-bottom: 15%;
+  }
+
+  .SAcontainer {
+    overflow: auto;
+  }
+}

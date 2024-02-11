@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Song Suggestions</title>
+  <script src="script.js"> </script>
+</head>
+
+<body>
+  <div id="SA" class="w3-modal" style="display: block;">
+    <div class="w3-modal-content">
+      <div class="SAcontainer">
+        <div>
+          <form id="analyze-form">
+            <label for="songName">
+              Enter a song title:
+            </label>
+            <input type="text" id="songName" name="songName" />
+            <input id="runForm" type="submit" value="Submit" />
+            <button id="SAclose" style="text-align: right;" onclick="document.getElementById('SA').style.display='none'">close</button>
+          </form>
+          <p style="margin: 0px; margin-top: 1px;  padding: 0px;"><i>Click the title to go to the Spotify page! You can also enter artist names.</i></p>
+          <br />
+          <div id="input">
+          </div>
+          <div id="output">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
